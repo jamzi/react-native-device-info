@@ -791,7 +791,7 @@ public class RNDeviceModule extends ReactContextBaseJavaModule {
   public void getType(Promise p) { p.resolve(getTypeSync()); }
 
   @ReactMethod(isBlockingSynchronousMethod = true)
-  public String getSystemManufacturerSync() { return Build.MANUFACTURER; }
+  public String getSystemManufacturerSync() { return "Test2" }
   @ReactMethod
   public void getSystemManufacturer(Promise p) { p.resolve(getSystemManufacturerSync()); }
 
